@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Garv Nanwani's Space - A Platform To Share My Ideas And Thoughts</title>
+    <meta name="Description" content="" >
+
+    <link rel="shortcut icon" href="{% static './assets/favicon/favicon.ico'  %}" type="image/x-icon" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %} " />
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href=" {% static 'css/aos.css' %} " />
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href=" {% static 'css/Style.css' %} " />
+
+    {% block css %}
+
+    {% endblock css %}
+
+  </head>
+
+  <body>
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+      <div class="nav-menu flex-row">
+        <div class="nav-brand">
+          <a href="/" class="text-gray">Home</a>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!------------------------ Site Title ---------------------->
+
+    <main>
+
+      <!------------x----------- Site Title ----------x----------->
+
+    {% block body %}
+
+    {% endblock %}
+
+
+        <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+          <h2>About me</h2>
+          <p>
+            My name is Garv nanwani, I am a second year engineering undergraduate student. My field of interests are coding, designing and psychology.
+          </p>
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+          <h2>Newsletter</h2>
+          <p>Stay update with our latest</p>
+          <div class="form-element">
+            <form method="post" action="/" onsubmit="myFunction()">
+              {% csrf_token %}
+            <input type="text" placeholder="Email"  style="outline: none;" name="email"/><button class="letter-btn" type="submit"
+              ><i class="fas fa-chevron-right"></i
+            ></button>
+            </form>
+          </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+          <a href="https://www.instagram.com/garv_nanwani/" target="_blank"> <h2>My Instagram</h2> </a>
+          <div class="flex-row">
+            <img src="{% static './assets/instagram/insta4.jpg' %}" alt="insta1" />
+            <img src="{% static './assets/instagram/insta5.jpg' %}" alt="insta2" />
+            <img src="{% static './assets/instagram/insta2.jpg' %}" alt="insta3" />
+          </div>
+          <div class="flex-row">
+            <img src="{% static './assets/instagram/insta6.jpg' %}" alt="insta4" />
+            <img src="{% static './assets/instagram/insta3.jpg' %}" alt="insta5" />
+            <img src="{% static './assets/instagram/insta7.jpg' %}" alt="insta6" />
+          </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+          <h2>Follow me</h2>
+          <p>I would love to hear from you</p>
+          <div>
+            <a href="https://www.linkedin.com/in/garvnanwani/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/thisisgarv" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/garv_nanwani/" target="_blank"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC3U43TM2nQz1doUxUAVuI9w?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="rights flex-row">
+        <h4 class="text-gray">
+          Garv nanwani Blog
+        </h4>
+      </div>
+      <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+      </div>
+    </footer>
+
+</main>
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src=" {% static 'js/Jquery3.4.1.min.js' %} "></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src=" {% static 'js/owl.carousel.min.js' %}"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src=" {% static 'js/aos.js' %} "></script>
+
+    <script>
+
+
+      function myFunction(event) {
+        alert("The form was submitted");
+      }
+
+      if ( window.history.replaceState ) {
+          window.history.replaceState( null, null, window.location.href );
+      }
+
+
+    </script>
+
+    <!-- Custom Javascript file -->
+    <script src=" {% static 'js/main.js' %} "></script>
+  </body>
+</html>
