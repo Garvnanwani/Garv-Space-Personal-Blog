@@ -13,7 +13,7 @@ class Post(models.Model):
     body = models.TextField()
     publish = models.DateTimeField(default=timezone.now)
     category = models.CharField(max_length = 20)
-    image = models.ImageField(upload_to= 'pics')
+    imageId = models.CharField(max_length= 200, blank = True)
     slug = models.SlugField(blank= True, unique= True)
 
     

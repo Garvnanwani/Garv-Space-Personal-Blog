@@ -413,6 +413,10 @@ footer.footer .move-up span {
     height: 125vh;
   }
 
+  main .site-title {
+    height: 88vh;
+  }
+
   .site-content .post-content > .post-image .post-info {
     display: none;
   }

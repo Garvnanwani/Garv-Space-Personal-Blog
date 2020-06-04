@@ -165,8 +165,8 @@ body {
 </div>
 
 <div id="post-body">
-  <img src="{{ blog_post.image.url }}" alt="blog related image" class="blog-img">
-    <p id="content">{{ blog_post.body|safe }}</p>
+  <img src="https://drive.google.com/uc?id={{ blog_post.imageId }}" alt="blog related image" class="blog-img">
+    <p id="content" style="word-wrap:break-word">{{ blog_post.body|safe }}</p>
 </div>
 
 <div class="info">
