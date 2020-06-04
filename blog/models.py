@@ -9,7 +9,7 @@ class Post(models.Model):
     author = models.ForeignKey(User,
                                on_delete=models.CASCADE,
                                related_name='blog_posts')
-    intro = models.TextField(blank=True)
+    intro = models.CharField(max_length=100, blank=True)
     body = models.TextField()
     publish = models.DateTimeField(default=timezone.now)
     category = models.CharField(max_length = 20)
@@ -30,10 +30,7 @@ class Post(models.Model):
         if not self.slug:
             self.slug = self._get_unique_slug()
         super().save(*args, **kwargs)
-
-    class Meta:
-        ordering = ('-publish',)
-
+        
     def __str__(self):
         return self.title
 
