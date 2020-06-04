@@ -128,7 +128,7 @@ hr {
 main .site-title {
   background: url("../assets/bg1.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
 }
@@ -402,6 +402,13 @@ footer.footer .move-up span {
     overflow-x: hidden !important;
     max-width: 100vw !important;
   }
+
+  
+  .nav .nav-brand a {
+    font-size: 1.9rem;
+    padding: 1.3rem 0;
+  }
+
   main .blog {
     height: 125vh;
   }
