@@ -1,31 +1,31 @@
 /* font-family: Abel  */
 @font-face {
-    font-family: Abel;
-    src: url('../fonts/Abel/Abel-Regular.ttf');
+  font-family: Abel;
+  src: url("../fonts/Abel/Abel-Regular.ttf");
 }
 
 /*  font-family: Anton  */
 @font-face {
-    font-family: Anton;
-    src: url('../fonts/Anton/Anton-Regular.ttf');
+  font-family: Anton;
+  src: url("../fonts/Anton/Anton-Regular.ttf");
 }
 
 /*  font-family: Josefin  */
 @font-face {
-    font-family: Josefin;
-    src: url('../fonts/Josefin_Sans/JosefinSans-Regular.ttf');
+  font-family: Josefin;
+  src: url("../fonts/Josefin_Sans/JosefinSans-Regular.ttf");
 }
 
 /*  font-family: Lexend  */
 @font-face {
-    font-family: Lexend;
-    src: url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf');
+  font-family: Lexend;
+  src: url("../fonts/Lexend_Deca/LexendDeca-Regular.ttf");
 }
 
 /*  font-family: Livvic  */
 @font-face {
-    font-family: Livvic;
-    src: url('../fonts/Livvic/Livvic-Regular.ttf');
+  font-family: Livvic;
+  src: url("../fonts/Livvic/Livvic-Regular.ttf");
 }
 
 html,
@@ -37,7 +37,7 @@ body {
   max-width: 100vw !important;
 }
 
-body{
+body {
   position: relative;
 }
 
@@ -51,7 +51,15 @@ body{
   --orange: #a26147;
 
   /* gradient color   */
-  --gradient: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  --gradient: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
 
   /*      theme font-family   */
   --Abel: "Abel", cursive;
@@ -143,7 +151,6 @@ p {
   font-family: var(--Lexend);
 }
 
-
 /* -------x------- navbar ---------x------- */
 
 /* ----------------- Main Content----------- */
@@ -202,7 +209,7 @@ main .site-content .post-content > .post-image,
 }
 
 main .site-content .post-content > .post-image .post-info {
-  background-color:#434343;
+  background-color: #434343;
   color: white;
   padding: 1rem;
   position: absolute;
@@ -228,7 +235,7 @@ main .site-content .post-content > .post-image .post-info span {
   margin: 0 0.5rem;
 }
 
-main .post-content .post-title{
+main .post-content .post-title {
   padding-bottom: 36px;
 }
 
@@ -237,25 +244,25 @@ main .post-content .post-title a {
   font-size: 1.5rem;
 }
 
-.name{
+.name {
   text-align: center;
 }
 
-.name h1{
+.name h1 {
   border: 1px solid black;
   border-radius: 35px;
   padding-top: 9px;
   padding-bottom: 13px;
   font-family: var(--Abel) !important;
-  color: rgba(0, 0, 0, 0.8)
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.title{
+.title {
   font-weight: bold;
   letter-spacing: 0.1rem;
 }
 
-.intro{
+.intro {
   margin-top: 20px;
   margin-bottom: 35px;
   color: rgba(0, 0, 0, 0.8);
@@ -264,7 +271,7 @@ main .post-content .post-title a {
 .site-content .post-content .post-title .post-btn {
   border-radius: 0;
   padding: 0.7rem 1.5rem;
-  background-color:#434343;
+  background-color: #434343;
   color: white;
 }
 
@@ -286,7 +293,7 @@ main .post-content .post-title a {
   color: var(--white);
 }
 
-#read-more{
+#read-more {
   font-size: 1.2rem;
 }
 
@@ -338,7 +345,7 @@ footer.footer .newsletter .form-element span {
   cursor: pointer;
 }
 
-.letter-btn{
+.letter-btn {
   font-size: 26px;
   position: relative;
   top: 1px;
@@ -375,14 +382,13 @@ footer.footer .move-up span {
   color: var(--white);
 }
 
-
 /* ---------x------- Footer ----------x---------- */
 
 @media only screen and (min-width: 1130px) {
-    #blog-img{
-      height: 500px;
-    }
-} 
+  #blog-img {
+    height: 500px;
+  }
+}
 
 /*              Viewport less then or equal to 1130px            */
 
@@ -419,6 +425,8 @@ footer.footer .move-up span {
   footer.footer .container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  
 }
 
 /*        x      Viewport less then or equal to 750px       x     */
@@ -431,7 +439,6 @@ footer.footer .move-up span {
     max-width: 100vw !important;
   }
 
-  
   .nav .nav-brand a {
     font-size: 1.9rem;
     padding: 1.3rem 0;
@@ -458,7 +465,7 @@ footer.footer .move-up span {
     text-align: center;
   }
 
-  #blog-img{
+  #blog-img {
     width: 96%;
     height: 170px;
   }
