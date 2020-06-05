@@ -399,6 +399,11 @@ footer.footer .move-up span {
     margin-left: 47px;
   }
 
+  .nav-tab{
+    position: relative !important;
+    top: 0px !important;
+  }
+
 }
 
 /*              Viewport less then or equal to 1130px            */
@@ -514,7 +519,7 @@ footer.footer .move-up span {
   
   .nav-tab{
     position: relative;
-    top: -18px;
+    top: -17px;
   }
 }
 
