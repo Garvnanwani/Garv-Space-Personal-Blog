@@ -514,7 +514,11 @@ footer.footer .move-up span {
 
   .site-name {
     position: relative !important;
-    top: -55px !important;
+    top: -58px !important;
+  }
+
+  #nav{
+    padding: 9px 2rem;
   }
 }
 
