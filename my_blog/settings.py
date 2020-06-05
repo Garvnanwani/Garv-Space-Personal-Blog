@@ -26,7 +26,7 @@ SECRET_KEY = ')d_%@_7-unq!krmd209cf3)2sb&5(e)2)o=l5r^l4o579fo*gj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['garvspace.herokuapp.com', '127.0.0.1','0.0.0.0', 'localhost']
+ALLOWED_HOSTS = ['garvnanwani.herokuapp.com', '127.0.0.1','0.0.0.0', 'localhost']
 
 
 # Application definition
