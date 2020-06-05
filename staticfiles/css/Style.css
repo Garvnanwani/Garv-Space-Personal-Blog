@@ -510,4 +510,12 @@ footer.footer .move-up span {
   }
 }
 
+@media only screen and (orientation:landscape) {
+  
+  .nav-tab{
+    position: relative;
+    top: -20px;
+  }
+}
+
 /*        x      Viewport less then or equal to 520px       x     */
