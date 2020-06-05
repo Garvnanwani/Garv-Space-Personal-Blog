@@ -124,6 +124,9 @@ span {
 
 p {
   font-family: var(--Lexend);
+}
+
+.light-text{
   color: var(--text-light);
 }
 
@@ -266,6 +269,7 @@ main .post-content .post-title a {
   margin-top: 20px;
   margin-bottom: 35px;
   color: rgba(0, 0, 0, 0.8);
+  word-wrap: break-word;
 }
 
 .site-content .post-content .post-title .post-btn {
@@ -291,10 +295,6 @@ main .post-content .post-title a {
 .site-content .pagination .pages {
   background: var(--text-gray);
   color: var(--white);
-}
-
-#content{
-  color: black !important;
 }
 
 #read-more {
@@ -457,6 +457,11 @@ footer.footer .move-up span {
     width: 100% !important;
     height: 35% !important;
   }
+
+  #blog-img{
+    height: 220px;
+    width:96%
+  }
 }
 
 /*        x      Viewport less then or equal to 750px       x     */
@@ -483,10 +488,6 @@ footer.footer .move-up span {
   footer .rights {
     padding: 0 1.4rem;
     text-align: center;
-  }
-  #blog-img {
-    width: 96%;
-    height: 170px;
   }
   .site-name {
     position: relative !important;

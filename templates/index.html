@@ -48,6 +48,10 @@ ul{
     color: #3354AA;
 }
 
+.title{
+  color: black;
+}
+
 </style>
 
 {% endblock css %}
@@ -106,7 +110,7 @@ ul{
                 <a href="{% url 'blog:detail' post.slug %}" class="title"
                   >{{ post.title}}</a
                 >
-                <p class="intro">
+                <p class="intro light-text"> 
                   {{post.intro}}......
                 </p>
                 <a type="button" id = "read-more" class="btn post-btn" href="{% url 'blog:detail' post.slug %}">

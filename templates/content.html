@@ -49,7 +49,8 @@ body {
 }
 
 #content{
-  font-size: 22px;
+  font-size: 28px;
+  color:black;
 }
 
 .nav .social {
@@ -76,12 +77,13 @@ body {
 
 .info{
   margin-bottom: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 .author{
   font-size: 24px;
   color: black;
+  padding-left: 90px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -128,7 +130,7 @@ body {
   }
 
   #content{
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 
   .info{
@@ -137,6 +139,7 @@ body {
 
   .author{
     font-size: 15px;
+    padding-left: 7px;
   }
 
   .blog-img{
@@ -158,14 +161,16 @@ body {
     <h1>{{ blog_post.title}}</h1>
 </div>
 
+<div class="info">
+  <p class="author">Posted By {{ blog_post.author }} on {{ blog_post.publish }} </p>
+</div>
+
 <div id="post-body">
   <img src="https://drive.google.com/uc?id={{ blog_post.imageId }}" alt="blog related image" class="blog-img">
     <p id="content" style="word-wrap: break-word;">{{ blog_post.body|safe }}</p>
 </div>
 
-<div class="info">
-  <p class="author">Posted By {{ blog_post.author }} on {{ blog_post.publish }} </p>
-</div>
+
 {% endblock body %}
 
     
