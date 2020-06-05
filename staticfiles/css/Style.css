@@ -448,11 +448,6 @@ footer.footer .move-up span {
     top: -112px;
   }
 
-  .site-idea {
-    position: relative !important;
-    top: -112px !important;
-  }
-
   .nav-tab{
     position: relative;
     top: -21px;
@@ -499,11 +494,6 @@ footer.footer .move-up span {
     top: 0 !important;
   }
 
-  .site-idea {
-    position: relative;
-    top: 32px;
-  }
-
   .nav-tab{
     position: relative;
     top: -3px;
@@ -519,12 +509,12 @@ footer.footer .move-up span {
   
   .nav-tab{
     position: relative;
-    top: -16px;
+    top: -15px;
   }
 
-  .site-name h1, h3{
+  .site-name {
     position: relative !important;
-    top: -50px !important;
+    top: -55px !important;
   }
 }
 
