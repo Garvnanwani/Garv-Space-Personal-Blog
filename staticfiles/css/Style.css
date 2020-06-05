@@ -515,11 +515,16 @@ footer.footer .move-up span {
   }
 }
 
-@media only screen and (orientation:landscape) {
+@media only screen and (orientation:landscape) and (max-width:1000px){
   
   .nav-tab{
     position: relative;
-    top: -17px;
+    top: -16px;
+  }
+
+  .site-name h1, h3{
+    position: relative !important;
+    top: -50px !important;
   }
 }
 
