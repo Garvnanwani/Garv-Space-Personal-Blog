@@ -170,9 +170,9 @@ body {
   <p class="author">Posted By {{ blog_post.author }} on {{ blog_post.publish }} </p>
 </div>
 
-<div id="post-body">
+<div id="post-body" style="word-break: break-word;">
   <img src="https://drive.google.com/uc?id={{ blog_post.imageId }}" alt="blog related image" class="blog-img">
-    <p id="content" style="word-wrap: break-word;">{{ blog_post.body|safe }}</p>
+    <p id="content">{{ blog_post.body|safe }}</p>
 </div>
 
 
