@@ -1,4 +1,4 @@
-Django==3.1.14
+Django==3.2.12
 django-tinymce4-lite==1.8.0
 sqlparse==0.3.0
 pytz==2019.3
